@@ -5,6 +5,7 @@ date: 2026-07-11
 read_time: 17 min de lectura
 original: https://vulnerability-management.hashnode.dev/qu-es-gesti-n-de-vulnerabilidades-c-mo-funciona-y-por-qu-es-importante
 counterpart: ../en/vulnerability-management.html
+cover: https://cdn.hashnode.com/uploads/covers/6a443c3a6ecaa7a89af0d14b/4c387ca0-c160-437f-a207-e1ec4130d2e2.png
 ---
 
 ## ¿Qué es una vulnerabilidad?
@@ -57,6 +58,8 @@ Gestión de vulnerabilidades corresponde a un proceso continuo y cíclico que pe
 
 > **Punto clave**: Poder controlar los problemas de seguridad encontrados y asegurarse de que los productos se actualicen lo antes posible (normalmente después de las pruebas, para garantizar que no haya efectos no deseados derivados de la actualización) significa que los hackers tienen menos tiempo para intentar explotar las vulnerabilidades.
 
+![](https://cdn.hashnode.com/uploads/covers/6a443c3a6ecaa7a89af0d14b/d22f7fd1-c7e3-4cc9-9776-0cda8bc3425b.png)
+
 ---
 
 ## Ciclo de Vida de la Gestión de Vulnerabilidades
@@ -70,6 +73,8 @@ El ciclo de vida de gestión de vulnerabilidades consta de 5 pasos principales:
 | **Priorización (Prioritization/Triage)** | Clasificar por riesgo usando gravedad + contexto organizacional. |
 | **Resolución (Resolution)** | Remediar, mitigar o aceptar el riesgo. |
 | **Verificación (Verification)** | Confirmar que la vulnerabilidad fue eliminada/mitigada; reevaluar. |
+
+![](https://cdn.hashnode.com/uploads/covers/6a443c3a6ecaa7a89af0d14b/01c370da-c5a8-4525-8a28-3d66dc863181.png)
 
 ### Definición del Alcance para el Descubrimiento
 - **Inventario de Activos (Asset Inventory)** – Es una lista completa de activos de hardware + software.

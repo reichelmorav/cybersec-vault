@@ -144,6 +144,35 @@ code, pre{ font-family:"JetBrains Mono", ui-monospace, monospace; }
   .lang-switch{ margin-left:0; width:100%; }
 }
 
+/* ---------- Article reading page (Articles section only): closer to a clean
+   blog-reading layout — bigger type, more air, cover image, styled inline images. ---------- */
+.article-reading{ max-width:720px; }
+.article-reading h1{ font-size:clamp(30px,5vw,44px); line-height:1.15; margin:10px 0 22px; }
+.article-cover{
+  display:block; width:100%; max-height:420px; object-fit:cover;
+  border-radius:14px; margin:0 0 30px; box-shadow:0 0 0 1px var(--line);
+}
+.article-reading .article-body{ font-size:17px; line-height:1.85; }
+.article-reading .article-body p{ margin:20px 0; }
+.article-reading .article-body h2{
+  font-size:26px; margin-top:52px; margin-bottom:18px; border-bottom:none; padding-bottom:0;
+}
+.article-reading .article-body h3{ font-size:19px; margin-top:32px; margin-bottom:10px; }
+.article-reading .article-body ul, .article-reading .article-body ol{ padding-left:24px; }
+.article-reading .article-body li{ margin:8px 0; line-height:1.75; }
+.article-reading .article-body img{
+  display:block; width:100%; height:auto; border-radius:12px; margin:30px 0;
+  box-shadow:0 0 0 1px var(--line);
+}
+.article-reading .article-body blockquote{
+  margin:30px 0; padding:18px 22px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 12px 12px 0; color:var(--ink);
+  font-size:17px; font-style:italic;
+}
+.article-reading .article-body blockquote strong{ font-style:normal; }
+.article-reading .article-body hr{ margin:44px 0; }
+.article-reading .article-body table{ font-size:14.5px; }
+
 /* ---------- Cheatsheets: category index page crumbs sit inside the hero ---------- */
 .hero .article-crumbs{ margin-bottom:12px; }
 
