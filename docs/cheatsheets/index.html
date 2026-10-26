@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
 </head>
 <body>
 <header class="topbar">
@@ -28,11 +29,14 @@
 <section class="hero">
   <div class="eyebrow">Reference &middot; Quick Lookup</div>
   <h1>Cheatsheets &amp; Notes</h1>
-  <p>Technical summaries and quick-reference notes on various cybersecurity topics: web app pentesting, networking, tools, and more.</p>
+  <p>Technical summaries and quick-reference notes on various cybersecurity topics, grouped by subject as new ones get added.</p>
 </section>
-<section class="placeholder-block">
-  <h2>Coming soon</h2>
-  <p>This section will bring together cheatsheets organized by category (OWASP Top 10, recon tools, payloads, assessment methodologies) as they get published.</p>
+<section class="article-grid" id="cheatsheetGrid">
+<a class="article-card" href="oswa-web-app-pentesting/index.html">
+  <h3>OSWA Web App Pentesting</h3>
+  <p>Condensed, by-topic reference covering the core web attack categories tested on OffSec&#x27;s OSWA (WEB-200) exam.</p>
+  <span class="read-more">8 topics &rarr;</span>
+</a>
 </section>
 
 </main>
@@ -42,6 +46,7 @@
     <span class="muted">Articles, labs and cheatsheets on pentesting / vulnerability management</span>
   </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="../assets/site.js"></script>
 </body>
 </html>

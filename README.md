@@ -12,9 +12,13 @@ with each post/guide's own page staying fully in its original language.
 - **Labs** — hands-on practice-environment guides, also bilingual with the
   same language filter as Articles, so people who don't speak English can
   still follow along. Currently empty, ready for the first guide.
-- **Cheatsheets** — placeholder, ready for technical reference notes (you can
-  migrate the web app pentesting cheatsheet site here later if you want to
-  unify everything in one place).
+- **Cheatsheets** — grouped by category: the top-level page shows one card per
+  category (e.g. "OSWA Web App Pentesting"), clicking it opens that
+  category's own index listing its individual topic pages (SQL Injection,
+  XSS, SSRF, XXE, SSTI, Directory Traversal, Command Injection, Auth/Session).
+  This keeps unrelated future categories (networking, AD, cloud, etc.) from
+  blending into one giant list. Code/command blocks are syntax-highlighted
+  (highlight.js, dark theme) so payloads stand out from prose.
 
 Palette: violet (`#7c3aed` / `#a78bfa` in dark mode) over light gray
 (`#f1eef7`) / near-black in dark mode, following the system theme.
@@ -75,11 +79,33 @@ without the Jekyll processor touching them.
    show up in the Labs index with the same English/Español filter used in
    Articles.
 
-## Adding content to Cheatsheets
+## Adding a new cheatsheet topic (to an existing category)
 
-For now this is a placeholder page (`docs/cheatsheets/index.html`). Once you
-have content ready, ask me to fill it in following the same card/article
-pattern used elsewhere.
+1. Source lives in `content_src/cheatsheets/<slug>.md` (no language split —
+   cheatsheets stay in English) with this frontmatter:
+   ```yaml
+   ---
+   category: OSWA Web App Pentesting
+   order: 9
+   summary: One-line description shown on the topic's card.
+   ---
+   # Topic Title
+
+   Body content, using `##` for sections (they become the in-page
+   "On this page" sidebar automatically) and fenced code blocks
+   (```bash, ```sql, etc.) for commands/payloads — these get syntax-highlighted
+   automatically.
+   ```
+2. Ask me to regenerate the site with `build_newsite.py`. The topic appears
+   as a new card inside its category's page, ordered by `order`.
+
+## Adding a brand-new cheatsheet category
+
+Just give a new file a `category:` value that doesn't exist yet (e.g.
+`category: Active Directory`). It automatically gets its own card on the
+top-level Cheatsheets page and its own category index — no code changes
+needed, just add the `CATEGORY_BLURBS` entry in `build_newsite.py` if you
+want a one-line description under the category title (optional).
 
 ## Structure
 
@@ -100,7 +126,17 @@ docs/
     en/
     es/
   cheatsheets/
-    index.html
+    index.html                          (one card per category)
+    oswa-web-app-pentesting/
+      index.html                        (one card per topic in this category)
+      sql-injection.html
+      xss.html
+      ssrf.html
+      xxe.html
+      ssti.html
+      directory-traversal.html
+      command-injection.html
+      auth-session.html
 content_src/
   articles/
     en/vulnerability-management.md
@@ -108,4 +144,13 @@ content_src/
   labs/
     en/
     es/
+  cheatsheets/
+    sql-injection.md
+    xss.md
+    ssrf.md
+    xxe.md
+    ssti.md
+    directory-traversal.md
+    command-injection.md
+    auth-session.md
 ```

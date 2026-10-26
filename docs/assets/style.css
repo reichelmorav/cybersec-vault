@@ -121,7 +121,12 @@ code, pre{ font-family:"JetBrains Mono", ui-monospace, monospace; }
 .article-body th, .article-body td{ border:1px solid var(--line); padding:7px 10px; text-align:left; }
 .article-body th{ background:var(--accent-soft); font-family:"JetBrains Mono",monospace; font-size:11.5px; text-transform:uppercase; }
 .article-body blockquote{ margin:16px 0; padding:4px 16px; border-left:3px solid var(--accent); background:var(--accent-soft); border-radius:0 8px 8px 0; color:var(--muted); }
-.article-body code{ background:var(--accent-soft); padding:2px 5px; border-radius:4px; font-size:13px; }
+/* Inline code (inside text, not a fenced block) keeps the small accent badge look */
+.article-body :not(pre) > code{ background:var(--accent-soft); color:var(--accent); padding:2px 5px; border-radius:4px; font-size:13px; }
+/* Fenced code blocks (commands/payloads): dark gray box, syntax-highlighted via highlight.js,
+   kept dark in both light and dark site themes since that's the universal "this is a terminal/code" cue. */
+.article-body pre{ margin:16px 0; border-radius:10px; box-shadow:0 0 0 1px rgba(0,0,0,.25); }
+.article-body pre code.hljs{ border-radius:10px; font-size:13px; line-height:1.6; }
 .article-body hr{ border:none; border-top:1px solid var(--line); margin:28px 0; }
 .original-note{ margin-top:36px; padding-top:16px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); }
 
@@ -137,4 +142,28 @@ code, pre{ font-family:"JetBrains Mono", ui-monospace, monospace; }
 @media (max-width:600px){
   .article-meta{ flex-wrap:wrap; }
   .lang-switch{ margin-left:0; width:100%; }
+}
+
+/* ---------- Cheatsheets: category index page crumbs sit inside the hero ---------- */
+.hero .article-crumbs{ margin-bottom:12px; }
+
+/* ---------- Cheatsheet page (with in-page TOC sidebar) ---------- */
+.cheatsheet-page{ max-width:1080px; }
+.cheatsheet-layout{ display:grid; grid-template-columns:220px 1fr; gap:36px; align-items:start; margin-top:10px; }
+.cheatsheet-toc{
+  position:sticky; top:84px; background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:16px 16px; font-size:13px; max-height:calc(100vh - 110px); overflow-y:auto;
+}
+.cheatsheet-toc-label{ font-family:"JetBrains Mono",monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:8px; }
+.cheatsheet-toc ul{ list-style:none; margin:0; padding:0; }
+.cheatsheet-toc ul ul{ padding-left:14px; margin-top:2px; }
+.cheatsheet-toc li{ margin:3px 0; }
+.cheatsheet-toc a{ color:var(--ink); text-decoration:none; display:block; padding:2px 0; }
+.cheatsheet-toc a:hover{ color:var(--accent); }
+.cheatsheet-page .article-body h2{ scroll-margin-top:84px; }
+.cheatsheet-page .article-body h3{ scroll-margin-top:84px; }
+
+@media (max-width:860px){
+  .cheatsheet-layout{ grid-template-columns:1fr; }
+  .cheatsheet-toc{ position:static; max-height:none; }
 }

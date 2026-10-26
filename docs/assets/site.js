@@ -25,4 +25,9 @@
       });
     });
   }
+
+  // Syntax-highlight fenced code blocks (payloads, commands, etc.) via highlight.js
+  if (window.hljs) {
+    hljs.highlightAll();
+  }
 })();
