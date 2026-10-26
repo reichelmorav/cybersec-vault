@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es" data-theme="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Qué es Gestión de Vulnerabilidades, cómo funciona y por qué es importante?</title>
+<meta name="description" content="¿Qué es Gestión de Vulnerabilidades, cómo funciona y por qué es importante?">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="../../index.html">Reichel<span>.sec</span></a>
+    <nav class="toplinks">
+      <a href="../../index.html">Home</a>
+      <a class="active" href="../../articles/index.html">Articles</a>
+      <a href="../../labs/index.html">Labs</a>
+      <a href="../../cheatsheets/index.html">Cheatsheets</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+<main class="page">
+
+<article class="article">
+  <div class="article-crumbs"><a href="../../index.html">Home</a> / <a href="../index.html">Articles</a></div>
+  <div class="article-meta">
+    <span class="lang-pill">ES</span>
+    <span>2026-07-11</span>
+    <span>&middot;</span>
+    <span>17 min de lectura</span>
+    <a class="lang-switch" href="../en/vulnerability-management.html">Read in English &rarr;</a>
+  </div>
+  <h1>¿Qué es Gestión de Vulnerabilidades, cómo funciona y por qué es importante?</h1>
+  <div class="article-body">
+<h2>¿Qué es una vulnerabilidad?</h2>
+<p>Una vulnerabilidad corresponde a debilidades o problemas presentes en un sistema que hacen más probable que se materialice una amenaza. A su vez, una amenaza es algo que puede causar daños a los datos de un sistema u organización.</p>
+<hr />
+<h2>Tipos de Vulnerabilidades</h2>
+<h3>Vulnerabilidades de Software</h3>
+<ul>
+<li>Debilidades no intencionales introducidas durante el proceso de desarrollo.</li>
+<li>Ejemplos: corrupción de memoria, errores lógicos.</li>
+<li>Específicos del lenguaje o independientes del lenguaje.</li>
+</ul>
+<h3>Errores de Configuración</h3>
+<ul>
+<li>Configuración incorrecta durante la instalación o mantenimiento como por ejemplo credenciales predeterminadas, privilegios excesivos o puertos innecesarios abiertos.</li>
+<li>Usualmente son accidentales o debidos al incumplimiento de las mejores prácticas de seguridad.</li>
+</ul>
+<h3>Vulnerabilidades de Diseño</h3>
+<ul>
+<li>Corresponden a fallos estructurales o arquitectónicos.</li>
+<li>Ejemplos: uso de algoritmos criptográficos débiles o falta de cifrado en tránsito o reposo.</li>
+</ul>
+<h3>Vulnerabilidades de Red</h3>
+<ul>
+<li>Las vulnerabilidades a nivel de red permiten al atacante acceder a la red interna.</li>
+<li>Ejemplos: puertos y firewalls débiles.</li>
+</ul>
+<h3>Vulnerabilidades de Hardware</h3>
+<ul>
+<li>Dispositivos físicos como por ejemplo routers, servidores o dispositivos USB, que pueden tener vulnerabilidades en su diseño que los ciberdelincuentes aprovechan.</li>
+</ul>
+<h3>Vulnerabilidades Humanas</h3>
+<ul>
+<li>Corresponde a la mayor causa de vulnerabilidades de ciberseguridad.</li>
+<li>Abrir enlaces de phishing, usar contraseñas fáciles de adivinar o falta de concientización son algunas de estas.</li>
+</ul>
+<hr />
+<h2>¿Qué es Gestión de Vulnerabilidades?</h2>
+<p>Gestión de vulnerabilidades corresponde a un proceso continuo y cíclico que permite a las organizaciones identificar, evaluar, priorizar y remediar debilidades y vulnerabilidades en la infraestructura de TI antes de que los atacantes puedan explotarlas.</p>
+<h3>Pasos Esenciales</h3>
+<p><strong>Identificación</strong> – Hacer uso de escáneres de vulnerabilidades, técnicas manuales y métodos de descubrimiento de equipos para identificar y registrar los sistemas, junto con cualquier problema de seguridad que presenten.</p>
+<p><strong>Informes</strong> – Informar sobre estos problemas a las partes interesadas para que puedan abordarse y, finalmente, resolverse.</p>
+<p><strong>Corrección</strong> – El propietario del sistema o el responsable técnico corrigen los problemas de seguridad para que la vulnerabilidad deje de existir. Se pueden utilizar diferentes métodos para corregir las vulnerabilidades, como parches de seguridad, reconfiguraciones o controles de mitigación.</p>
+<p><strong>Reevaluación</strong> – Escanear o verificar manualmente para asegurar que los problemas de seguridad se hayan corregido correctamente.</p>
+<blockquote>
+<p><strong>Punto clave</strong>: Poder controlar los problemas de seguridad encontrados y asegurarse de que los productos se actualicen lo antes posible (normalmente después de las pruebas, para garantizar que no haya efectos no deseados derivados de la actualización) significa que los hackers tienen menos tiempo para intentar explotar las vulnerabilidades.</p>
+</blockquote>
+<hr />
+<h2>Ciclo de Vida de la Gestión de Vulnerabilidades</h2>
+<p>El ciclo de vida de gestión de vulnerabilidades consta de 5 pasos principales:</p>
+<table>
+<thead>
+<tr>
+<th>Paso</th>
+<th>Enfoque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descubrimiento (Discovery)</strong></td>
+<td>Identificar todos los activos (hardware + software) en el entorno.</td>
+</tr>
+<tr>
+<td><strong>Evaluación (Assessment)</strong></td>
+<td>Detectar vulnerabilidades usando escáneres, pentesting, threat intelligence (como por ejemplo OSINT).</td>
+</tr>
+<tr>
+<td><strong>Priorización (Prioritization/Triage)</strong></td>
+<td>Clasificar por riesgo usando gravedad + contexto organizacional.</td>
+</tr>
+<tr>
+<td><strong>Resolución (Resolution)</strong></td>
+<td>Remediar, mitigar o aceptar el riesgo.</td>
+</tr>
+<tr>
+<td><strong>Verificación (Verification)</strong></td>
+<td>Confirmar que la vulnerabilidad fue eliminada/mitigada; reevaluar.</td>
+</tr>
+</tbody>
+</table>
+<h3>Definición del Alcance para el Descubrimiento</h3>
+<ul>
+<li><strong>Inventario de Activos (Asset Inventory)</strong> – Es una lista completa de activos de hardware + software.</li>
+<li><strong>Métodos de Creación:</strong></li>
+<li><strong>Manual</strong>: Hoja de cálculo, recorriendo redes (orgs pequeñas, consume tiempo).</li>
+<li><strong>Automatizado</strong>: Herramientas de gestión de activos, escaneo de red, agentes desplegados.</li>
+</ul>
+<h3>Métodos de Evaluación</h3>
+<ul>
+<li><strong>Escáneres de Vulnerabilidades</strong></li>
+<li><strong>Escáneres de Red (Network Scanners)</strong> – Identifican sistemas operativos, software y sus versiones, y posteriormente los comparan con bases de datos de vulnerabilidades conocidas.</li>
+<li><strong>Escáneres de Aplicaciones Web (Web Application Scanners)</strong> – Detectan vulnerabilidades comunes en aplicaciones web, como Cross-Site Scripting (XSS), Path Traversal y ataques de inyección (por ejemplo, SQL Injection).</li>
+<li><strong>Análisis Estático de Código (SAST)</strong> – Analiza el código fuente para identificar patrones de programación inseguros, credenciales o secretos embebidos (hardcoded secrets) y otras debilidades de seguridad antes del despliegue.</li>
+<li><strong>Evaluación de Configuración (Configuration Assessment)</strong> – Detecta configuraciones inseguras en entornos como Active Directory, plataformas en la nube (AWS, Azure y GCP) y sistemas operativos, comparando la configuración con estándares de seguridad como los CIS Benchmarks y otras buenas prácticas.</li>
+<li><strong>Pruebas de Penetración (Penetration Testing)</strong></li>
+<li>Consisten en un ciberataque simulado y autorizado diseñado para identificar vulnerabilidades que pueden ser explotadas por un atacante.</li>
+<li>Proporcionan una perspectiva diferente a la de los escáneres automatizados, ya que validan si una vulnerabilidad puede explotarse en un entorno real.</li>
+<li>Permiten verificar la efectividad de las acciones de remediación y de los controles compensatorios implementados.</li>
+<li>Requieren autorización explícita antes de su ejecución. En entornos de nube, dependiendo del alcance y del tipo de pruebas, también puede ser necesario obtener la aprobación del proveedor del servicio en la nube.</li>
+</ul>
+<hr />
+<h2>Priorización (Prioritization/Triage)</h2>
+<p><strong>No basarse solo en el score CVSS</strong> — es importante incluir el contexto organizacional.</p>
+<h3>Dos Consideraciones Clave</h3>
+<ol>
+<li><strong>Probabilidad de Explotación</strong> – Los factores que aumentan la probabilidad de que una vulnerabilidad sea explotada incluyen:
+   - La existencia de un proof of concept (PoC) o un exploit disponible públicamente (por ejemplo, en Exploit Database o GitHub).
+   - Que la vulnerabilidad se encuentre en el catálogo CISA Known Exploited Vulnerabilities (KEV).
+   - Puntaje alto en el Exploit Prediction Scoring System (EPSS), lo que indica una mayor probabilidad de que la vulnerabilidad sea explotada en entornos reales.</li>
+<li><strong>Impacto Potencial si es Explotada</strong> – Se deben evaluar las consecuencias de una explotación exitosa, incluyendo:
+   - Impacto inmediato, como el compromiso de un sistema o la interrupción de un servicio.
+   - Impacto diferido o encadenado, cuando la vulnerabilidad puede combinarse con otras para aumentar su impacto.
+   - Exposición de datos, interrupción del servicio, escalamiento de privilegios u otras consecuencias críticas para el negocio.</li>
+</ol>
+<h3>Categorización de Vulnerabilidades</h3>
+<p>Una vez que las vulnerabilidades han sido evaluadas y priorizadas, normalmente se clasifican en una de las siguientes categorías:
+- <strong>Corregir Inmediatamente</strong> – Vulnerabilidades de alta prioridad que requieren una acción inmediata.
+- <strong>Reconocer pero diferir</strong> – Vulnerabilidades cuyo riesgo se acepta de forma temporal y cuya remediación se programa para una fecha posterior.
+- <strong>Requiere Investigación Adicional</strong> – Vulnerabilidades que necesitan un análisis más profundo antes de determinar el curso de acción más adecuado.</p>
+<h3>Opciones de Resolución</h3>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Remediar (Remediate)</strong></td>
+<td>Eliminar completamente la vulnerabilidad mediante la aplicación de un parche de seguridad, una actualización de software, un cambio de configuración u otra solución permanente.</td>
+</tr>
+<tr>
+<td><strong>Mitigar (Mitigate)</strong></td>
+<td>Reducir la probabilidad o el impacto de la explotación sin eliminar por completo la vulnerabilidad (por ejemplo, implementando reglas de firewall, segmentación de red, deshabilitando servicios vulnerables o aplicando controles compensatorios).</td>
+</tr>
+<tr>
+<td><strong>Aceptar (Accept)</strong></td>
+<td>Reconocer y aceptar formalmente el riesgo cuando la remediación o la mitigación no sean viables. La aceptación del riesgo debe documentarse, ser aprobada por las partes interesadas correspondientes y revisarse periódicamente, ya que normalmente se considera una medida temporal.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Frameworks y Estándares Para Priorización</h2>
+<h3>1. CVE (Common Vulnerabilities and Exposures)</h3>
+<p>Sistema de identificación único y universal para vulnerabilidades conocidas públicamente. Cada vulnerabilidad recibe un ID único en formato CVE-YYYY-NNNNN que permite que vendedores, herramientas y organizaciones hablen el mismo idioma. Mantenido por MITRE Corporation (financiado por gobierno EE.UU.).
+- Opera mediante CNAs (CVE Numbering Authorities): organizaciones autorizadas para asignar IDs. Actualmente existen más de 300 CNAs distribuidos globalmente, incluyendo vendors principales, coordinadores de seguridad e investigadores certificados.
+- <strong>Uso en priorización</strong> – Permite buscar información verificable sobre una vulnerabilidad específica, consultar si hay parches disponibles y verificar si está siendo explotada activamente. Sin CVE ID, diferentes herramientas reportan la misma vulnerabilidad con nombres distintos, causando confusión y duplicación de esfuerzos. Es la clave para buscar en bases de datos de exploits públicos y coordinar respuesta entre equipos.</p>
+<h3>2. CVSS (Common Vulnerability Scoring System)</h3>
+<p>Es un framework estandarizado para evaluar severidad de vulnerabilidades mediante puntuación numérica de 0.0 (sin impacto) a 10.0 (crítico). Mantenido por FIRST (Forum of Incident Response and Security Teams).
+- Calcula el score usando 8 métricas base: Attack Vector (desde dónde), Attack Complexity (dificultad), Privileges Required (autenticación), User Interaction (intervención humana), Scope (cruza límites), Confidentiality/Integrity/Availability impact. También incluye métricas Temporales (cambian con el tiempo) y de Entorno (contexto organizacional).
+- <strong>Métricas de Explotabilidad</strong>
+  - Attack Vector (AV): Desde dónde se ataca – Network (remoto)/Adjacent (red local)/Local (acceso local)/Physical (acceso físico).
+  - Attack Complexity (AC): Dificultad técnica – Low (fácil, sin condiciones especiales)/High (requiere configuración compleja).
+  - Privileges Required (PR): Autenticación necesaria – None (sin auth)/Low (usuario básico)/High (admin/root).
+  - User Interaction (UI): Intervención humana requerida – None (totalmente automatizado)/Required (usuario debe hacer algo).
+- <strong>Métricas de Impacto</strong> – Miden el daño causado (CIA Triad + Scope).
+  - Scope (S): ¿El exploit cruza límites de seguridad? – Unchanged (impacto dentro del mismo componente)/Changed (impacto cruza a otros componentes).
+  - Confidentiality (C): Exposición de datos – None/Low (acceso limitado)/High (acceso completo).
+  - Integrity (I): Modificación de datos – None/Low (modificación limitada)/High (control completo).
+  - Availability (A): Denegación de servicio – None/Low (degradación)/High (sistema completamente caído).
+- <strong>Uso en priorización</strong> – Proporciona evaluación técnica estandarizada de severidad base. <strong>CRÍTICO</strong>: NO usar solo CVSS. Mide severidad técnica teórica, NO riesgo real. CVSS 9.0 en sistema aislado puede ser menos prioritario que CVSS 7.0 en servidor público crítico. Siempre complementar con contexto organizacional: criticidad del activo, exposición real, datos manejados, impacto al negocio.
+- <strong>Limitación principal</strong> – Mide impacto técnico, ignora probabilidad de explotación y el contexto organizacional.</p>
+<h3>3. CWE (Common Weakness Enumeration)</h3>
+<p>Sistema de clasificación que describe TIPOS o CLASES de vulnerabilidades, no vulnerabilidades individuales. Explica causas raíz y naturaleza fundamental de debilidades de seguridad. Es mantenido por MITRE Corporation.
+- Organiza debilidades en jerarquía de 4 niveles:
+  - <strong>Pillar</strong>: Categorías muy amplias (ej: Access Control).
+  - <strong>Class</strong>: Tipos generales (ej: Improper Authorization).
+  - <strong>Base</strong>: Identificables en código específico.
+  - <strong>Variant</strong>: Específicos a plataforma/lenguaje.
+- <strong>Diferencia con CVE</strong>
+  - CVE: Instancia específica de vulnerabilidad en producto/versión particular.
+  - CWE: Categoría abstracta del problema subyacente que puede manifestarse en múltiples productos.
+- <strong>Uso en priorización</strong> – Identifica patrones sistémicos de vulnerabilidades recurrentes. Si múltiples CVEs en tu entorno mapean al mismo CWE, indica problema estructural que requiere solución fundamental más allá del parcheo individual: capacitación de developers, revisión de prácticas de desarrollo, implementación de análisis estático, o cambios arquitectónicos. Esencial para análisis de causa raíz.</p>
+<h3>4. CPE (Common Platform Enumeration)</h3>
+<p>Es un esquema de nomenclatura estandarizado para identificar productos de software y hardware de forma única. Elimina ambigüedad en nombres de productos que pueden tener múltiples representaciones textuales ("Apache Web Server" vs "httpd" vs "Apache HTTP Server"). Creado y mantenido por el NIST (National Institute of Standards and Technology).
+- <strong>Formato que utilizan</strong> – URI estructurado con 11 componentes: <code>cpe:2.3:part:vendor:product:version:update:edition:language:sw_edition:target_sw:target_hw:other</code>
+  - Ejemplo: <code>cpe:2.3:a:apache:http_server:2.4.49:*:*:*:*:*:*:*</code>
+- <strong>Uso en priorización</strong> – Permite búsquedas precisas de vulnerabilidades por producto/versión en bases de datos como NVD. Escáneres automatizados usan CPE internamente para matchear software detectado con CVEs conocidos. Fundamental para automatización: sin CPE, sería necesario mapeo manual entre nombres y vulnerabilidades. Esencial para inventario de activos y Software Bill of Materials (SBOM).
+- <strong>Limitación principal</strong> – CPEs creados manualmente por analistas (pueden tener errores). Software muy nuevo puede no tener CPE asignado. Algunos productos tienen múltiples representaciones CPE válidas.</p>
+<h3>5. CISA KEV (Known Exploited Vulnerabilities Catalog)</h3>
+<p>Catálogo autoritativo de vulnerabilidades con evidencia confiable y verificada de explotación ACTIVA en ataques reales. Creado por CISA (Cybersecurity and Infrastructure Security Agency – gobierno EE.UU.). Se basa en inteligencia de amenazas, reportes de incidentes y análisis de campañas maliciosas.
+- Establece fechas límite OBLIGATORIAS de remediación para agencias federales estadounidenses. Por lo cual, KEV se convierte en un requisito de compliance para sector público de Estados Unidos.
+- <strong>Uso en priorización</strong> – Si una vulnerabilidad aparece en KEV, existe evidencia confirmada de explotación activa por actores maliciosos reales. Remediar inmediatamente independientemente del score CVSS, criticidad del sistema o disponibilidad de workarounds. La explotación activa significa que la ventana para prevenir compromiso se cierra rápidamente.</p>
+<p>Aunque es obligatorio solo para agencias federales de Estados Unidos, organizaciones privadas y de otros países deben usarlo como indicador de amenaza inminente. Si atacantes explotan contra el gobierno, en algún momento se podrán mover hacia el sector privado.</p>
+<h3>6. EPSS (Exploit Prediction Scoring System)</h3>
+<p>Sistema de scoring probabilístico basado en machine learning que predice la PROBABILIDAD (0% a 100%) de que una vulnerabilidad sea explotada en los próximos 30 días. Creado por el FIRST (Forum of Incident Response and Security Teams). Analiza múltiples señales como la disponibilidad de código de exploit público, menciones en listas de correo de seguridad, discusiones en redes sociales, actividad en repositorios de código, tendencias históricas de explotación. Modelo entrenado continuamente con datos históricos.</p>
+<p>A diferencia de CVSS (estático), EPSS cambia diariamente según evoluciona el panorama de amenazas. Una vulnerabilidad puede tener EPSS bajo inicialmente pero subir si se publica exploit funcional.</p>
+<ul>
+<li><strong>Complemento del CVSS:</strong></li>
+<li>CVSS responde: "¿Qué tan malo sería si fuera explotado?" (Impacto)</li>
+<li>EPSS responde: "¿Qué tan probable es que sea explotado pronto?" (Probabilidad)</li>
+<li>Fórmula: Riesgo Real = Impacto (CVSS) × Probabilidad (EPSS)</li>
+<li><strong>Uso en priorización</strong> – Permite priorización basada en riesgo real cuando recursos son limitados. CVSS 9.0 + EPSS 0.1% = menos riesgo inmediato que CVSS 7.0 + EPSS 95%. Maximiza reducción de riesgo por unidad de esfuerzo atacando primero alta probabilidad de explotación.</li>
+</ul>
+<h3>7. NVD (National Vulnerability Database)</h3>
+<p>Base de datos comprensiva que enriquece entradas CVE básicas con análisis detallado y contexto adicional. Mantenido por el NIST (National Institute of Standards and Technology – gobierno EE.UU.). Permite filtrar por: producto específico (CPE), rango de severidad (CVSS), tipo de debilidad (CWE), fecha de publicación, vendor, o combinaciones múltiples.
+- <strong>Valor agregado sobre CVE.org:</strong>
+  - Scores CVSS oficiales calculados por analistas NIST.
+  - Mapeos a CWE (tipo de debilidad).
+  - CPEs afectados (productos/versiones).
+  - Timelines detalladas (descubrimiento-publicación-patch).
+  - Configuraciones específicas de explotabilidad.
+  - Historial de cambios.
+- <strong>Uso en priorización</strong> – Fuente centralizada para investigación detallada de vulnerabilidades identificadas (vía escáneres o pentesting). Consultar score CVSS oficial, entender tipo de debilidad (CWE), verificar versiones afectadas exactas, encontrar parches/workarounds, comprender vector de ataque. API permite automatización crítica: dashboards, alertas automáticas para nuevos CVEs en productos de tu inventario, reportes de compliance.</p>
+<hr />
+<h2>Herramientas Útiles en Gestión de Vulnerabilidades</h2>
+<p>Ejemplos de herramientas que se pueden utilizar para aprender sobre gestión de vulnerabilidades, algunas son open-source y otras tienen versiones gratuitas de prueba.</p>
+<h3>1. Nessus Essentials</h3>
+<p><a href="https://docs.tenable.com/nessus/Content/InstallNessus.htm">Nessus Essentials</a> es un producto gratuito de Tenable que permite realizar una evaluación de vulnerabilidades a través de una licencia de 30 días, diseñada específicamente para uso personal o no comercial. Es ideal para evaluaciones a corto plazo, pruebas de concepto (PoC) o para proteger una red doméstica pequeña. No está diseñado para entornos empresariales o de producción. Con esta licencia, se pueden escanear hasta 5 direcciones IP y obtener información detallada sobre vulnerabilidades y recomendaciones para su corrección.</p>
+<h3>2. OPENVAS</h3>
+<p><a href="https://www.openvas.org/">OPENVAS</a> es un escáner de vulnerabilidades creado por Greenbone. Este escáner puede detectar variedad de vulnerabilidades. Permite realizar varios tipos de escaneos como por ejemplo autenticados y no autenticados, entre otros tipos de pruebas que sirven para la detección de vulnerabilidades. Una limitación de OPENVAS es que su capacidad de escaneo depende del modelo del appliance y de sus recursos.</p>
+<h3>3. Nmap</h3>
+<p><a href="https://nmap.org/nsedoc/scripts/vulners.html">Nmap</a> es la abreviatura de "Network Mapper". Permite encontrar qué dispositivos se están ejecutando en su red local, detectar vulnerabilidades y descubrir puertos y servicios abiertos. Para poder detectar vulnerabilidades se debe hacer uso del script llamado <code>vulners</code>, para cada CPE disponible, el script imprime las vulnerabilidades conocidas (con enlaces a la información correspondiente) y sus puntuaciones CVSS.</p>
+<hr />
+<h2>¿Por qué es Importante la Gestión de Vulnerabilidades?</h2>
+<p>En lo que va del presente año, se han publicado 36,141 CVEs, lo cual corresponde a un promedio de 199 por día. En el 2025 se publicaron 48.167 CVEs, con un promedio de 132 por día. Según los datos de IBM, el costo promedio de una brecha de seguridad ha alcanzado los $4,4 millones a nivel mundial. Algunas vulnerabilidades críticas son explotadas en cuestión de horas, no días como solía ser anteriormente. El tiempo entre el descubrimiento y el patch es cada vez más corto.</p>
+<h2>Recursos Adicionales</h2>
+<ul>
+<li><strong>CVE Program</strong>: https://cve.org/</li>
+<li><strong>CVSS (FIRST)</strong>: https://www.first.org/cvss/</li>
+<li><strong>CWE (MITRE)</strong>: https://cwe.mitre.org/</li>
+<li><strong>CPE (NIST)</strong>: https://nvd.nist.gov/products/cpe</li>
+<li><strong>CISA KEV</strong>: https://www.cisa.gov/known-exploited-vulnerabilities-catalog</li>
+<li><strong>EPSS (FIRST)</strong>: https://www.first.org/epss/</li>
+<li><strong>NVD (NIST)</strong>: https://nvd.nist.gov/</li>
+</ul>
+<h3>Referencias</h3>
+<ol>
+<li>"Tipos de vulnerabilidades en ciberseguridad [2026] Inforges". INFORGES. https://inforges.es/blog/tipos-de-vulnerabilidades-en-ciberseguridad/</li>
+<li>"Vulnerabilidades de ciberseguridad: prevención y mitigación". SentinelOne. https://www.sentinelone.com/es/cybersecurity-101/cybersecurity/cyber-security-vulnerabilities/</li>
+<li>"Niveles de gravedad de las incidencias de seguridad | Atlassian". https://www.atlassian.com/es/trust/security/security-severity-levels</li>
+<li>"¿Qué es la gestión de vulnerabilidades? Mejores prácticas y desafíos". Zscaler. https://www.zscaler.com/es/zpedia/what-is-vulnerability-management</li>
+<li>"Gestión de vulnerabilidades: una guía práctica". Kaseya. https://www.kaseya.com/es-la/blog/vulnerability-management/</li>
+<li>IBM. "¿Qué es la gestión de vulnerabilidades?". https://www.ibm.com/es-es/think/topics/vulnerability-management</li>
+<li>"¿Qué es la gestión de vulnerabilidades? | Tenable". https://es-la.tenable.com/principles/vulnerability-management-principles</li>
+<li>M. Kosinski. "¿Qué es el ciclo de vida de la gestión de vulnerabilidades? | IBM". https://www.ibm.com/mx-es/think/topics/vulnerability-management-lifecycle</li>
+<li>"Ciclo de vida de la gestión de vulnerabilidades: una guía sencilla". SentinelOne. https://www.sentinelone.com/es/cybersecurity-101/cybersecurity/vulnerability-management-lifecycle/</li>
+<li>"What is Vulnerability Management Lifecycle?" Pathlock. https://pathlock.com/blog/vulnerability-management-lifecycle/</li>
+<li>T. Khan y M. Goodwin. "What Is CVE?". IBM. https://www.ibm.com/think/topics/cve</li>
+<li>A. Gomstyn y A. Jonker. "¿Qué es CVSS? | IBM". https://www.ibm.com/mx-es/think/topics/cvss</li>
+<li>"What Is a Common Weakness Enumeration (CWE)?" JumpCloud. https://jumpcloud.com/it-index/what-is-a-common-weakness-enumeration-cwe</li>
+<li>"What is Common Platform Enumeration (CPE)?" Hexnode. https://www.hexnode.com/blogs/explained/what-is-common-platform-enumeration-cpe/</li>
+<li>S. Ö. Hacıoğlu. "What Is KEV?" Picus Security. https://www.picussecurity.com/resource/blog/what-is-kev-known-exploited-vulnerabilities-catalog</li>
+<li>"Exploit Prediction Scoring System (EPSS) | Splunk". https://www.splunk.com/en_us/blog/learn/epss-exploit-prediction-scoring-system.html</li>
+<li>"What is the National Vulnerability Database (NVD)? | Fortinet". https://www.fortinet.com/resources/cyberglossary/national-vulnerability-database-nvd</li>
+<li>"What's the Average Cost of a Data Breach in 2025? | Huntress". https://www.huntress.com/blog/average-cost-of-a-data-breach</li>
+<li>J. Krell. "Mean Time to Exploit Has Gone Negative". Suzu Labs. https://suzulabs.com/suzu-labs-blog/mean-time-to-exploit-has-gone-negative.-security-strategy-has-to-change</li>
+<li>"CVE.ICU - CVE Analysis Dashboard". https://cve.icu/years.html</li>
+</ol>
+  </div>
+  <p class="original-note">Publicado originalmente en <a href="https://vulnerability-management.hashnode.dev/qu-es-gesti-n-de-vulnerabilidades-c-mo-funciona-y-por-qu-es-importante">Hashnode</a>.</p>
+</article>
+
+</main>
+<footer class="sitefooter">
+  <div class="sitefooter-inner">
+    <span>&copy; 2026 &middot; Personal cybersecurity site</span>
+    <span class="muted">Articles, labs and cheatsheets on pentesting / vulnerability management</span>
+  </div>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
